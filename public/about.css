@@ -1,0 +1,273 @@
+body {
+    background: url("hospital.jpg");
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 2;
+}
+
+.logo {
+    position: relative;
+    color: white;
+    background: black;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navigation {
+    position: relative;
+    display: flex;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation li a {
+    display: inline-block;
+    color: black;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+    transition: .5s;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.dropdown:hover .pro {
+    font-size: 25px;
+}
+
+.dropdown .dropdown-content {
+    background: white;
+    position: relative;
+    display: none;
+    width: 200px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.dropdown .dropdown-content a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.dropdown .dropdown-content a:hover {
+    color: #e91e63;
+}
+
+.dropdown:hover {
+    color: #e91e63;
+    background: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: inline;
+}
+
+.our-team {
+    padding: 30px 0 40px;
+    background: white;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.our-team .pic {
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.our-team .pic::before {
+    content: '';
+    width: 200%;
+    height: 0;
+    border-radius: 50%;
+    background: #eb1768;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    transform: scale(3);
+    transition: all 1.3 linear 0s;
+}
+
+.our-team:hover .pic::before {
+    height: 100%;
+    transition: 1.5s;
+}
+
+.our-team .pic::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #ee4266;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.our-team .pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 1.3s ease 0s;
+}
+
+.our-team:hover .pic img {
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+}
+
+.our-team .team-content {
+    margin-bottom: 30px;
+}
+
+.our-team .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #4e5052;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.our-team .post {
+    display: block;
+    font-size: 15px;
+    color: #4e5052;
+    text-transform: capitalize;
+}
+
+.our-team .social {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #eb1768;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 1.3s ease 0s;
+}
+
+.our-team:hover .social {
+    bottom: 0;
+}
+
+.our-team .social li {
+    display: inline-block;
+}
+
+.our-team .social li a {
+    display: block;
+    padding: 10px;
+    font-size: 27px;
+    color: white;
+    transition: all 1.3s ease 0s;
+}
+
+.our-team .social li a:hover {
+    color: #eb1768;
+    background: #f7f5ec;
+    text-decoration: none;
+}
+
+/* .sci {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.sci li a {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.5);
+}
+
+.sci li a i {
+    font-size: 50px;
+    color: red;
+}
+
+.sci li :hover {
+    color: rgb(0, 0, 0);
+} */
+
+
+
+.media{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    display: flex;
+}
+
+.media ul{
+    list-style: none;
+    display: flex;
+}
+
+.media li{
+    line-height: 4em;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media li a{
+    color: black;
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.media li a:hover{
+    color: white;
+}
+
+.media li a i{
+    font-size: 30px;
+}

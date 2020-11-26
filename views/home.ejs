@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0e070a32e4.js"></script>
+    <link rel="stylesheet" href="home.css">
+    <title>madhurai netralayam</title>
+</head>
+
+<body>
+
+    <div class="curve"></div>
+    
+    <header>
+        <a href="/" class="logo">MN</a>
+
+        <ul class="navigation">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/feedback">FEEDBACK</a></li>
+            <li class="dropdown">
+                <a href="/profile">PROFILE</a>
+                <div class="dropdown-content">
+                    <a href="#"><%= ename %></a>
+                    <a href="/profile">profile</a>
+                    <a href="/history">history</a>
+                    <a href="/logout">sign out</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+    
+    <div class="content">
+        <h2>madhurai netralayam</h2>
+        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or
+            web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought
+            to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen
+            book.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,
+            graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is
+            thought
+            to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book
+        </p>
+
+        <a href="/login">get appointment</a>
+    </div>
+
+    <div class="media">
+        <ul>
+            <li><a href="https://en-gb.facebook.com/login/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://twitter.com/login?lang=en" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </div>
+
+
+    <div class="image"><img src="img.png" id="image" alt="noimage"></div>
+
+    <div class="pics">
+        <li><img src="me1.png" alt="no1" onclick="myFunction('me1.png')"></li>
+        <li><img src="me1.png" alt="no1" onclick="myFunction('me.png')"></li>
+        <li><img src="me1.png" alt="no1" onclick="myFunction('img.png')"></li>
+    </div>
+
+    <script>
+        function myFunction(name) {
+            document.getElementById("image").src = name;
+        }
+    </script>
+</body>
+
+</html>

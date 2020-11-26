@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background: url("hospital.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo {
+    position: relative;
+    color: white;
+    background: black;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navigation {
+    position: relative;
+    display: flex;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation li a {
+    display: inline-block;
+    color: black;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+    transition: .5s;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.dropdown:hover .pro {
+    font-size: 25px;
+}
+
+.dropdown .dropdown-content {
+    background: white;
+    position: relative;
+    display: none;
+    /* width: 200px; */
+    text-align: center;
+}
+
+.dropdown .dropdown-content a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.dropdown .dropdown-content a:hover {
+    color: #e91e63;
+}
+
+.dropdown:hover {
+    color: #e91e63;
+    background: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: inline;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: orange;
+    border-radius: 20px;
+    /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: blue;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid orange;
+    /* creates padding around scroll thumb */
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 60%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+    border-radius: 20px;
+}
+
+tbody{
+    height: 60%;
+    overflow: auto;
+}
+table {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 500px;
+}
+
+table td,
+th {
+    padding: 15px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table th {
+    border-radius: 10px 10px 10px 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #eeff00;
+    color: black;
+    font-size: 2em;
+}
+
+thead th{
+    position: sticky;
+    top: 15px;
+}
+
+.media{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    display: flex;
+}
+
+.media ul{
+    list-style: none;
+    display: flex;
+}
+
+.media li{
+    line-height: 4em;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media li a{
+    color: black;
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.media li a:hover{
+    color: white;
+}
+
+.media li a i{
+    font-size: 30px;
+}

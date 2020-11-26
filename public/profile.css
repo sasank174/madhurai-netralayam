@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background: url("hospital.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+.logo{
+    position: relative;
+    color: white;
+    background: black;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navigation{
+    position: relative;
+    display: flex;
+}
+
+.navigation li{
+    list-style: none;
+}
+
+.navigation li a{
+    display: inline-block;
+    color: black;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navigation li a:hover{
+    color: rgb(250, 9, 9);
+}
+
+.dropdown{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.dropdown .dropdown-content{
+    background: white;
+    position: relative;
+    display: none;
+    /* width: 200px; */
+    text-align: center;
+}
+
+.dropdown .dropdown-content a{
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.dropdown .dropdown-content a:hover{
+    color: orange;
+}
+
+.dropdown:hover{
+    color: #e91e63;
+    background: white;
+}
+
+.dropdown:hover .dropdown-content{
+    display: inline;
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(45deg, rgb(60, 255, 0), violet 70%);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+section h2 {
+    position: relative;
+    color: black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    line-height: 1em;
+    font-size: 100px;
+    font-weight: 500;
+    padding-left: 10px;
+    text-align: center;
+}
+
+section .inputbox,
+button {
+    position: relative;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 35px;
+}
+
+section .inputbox input,
+button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border: 1.5px solid black;
+    background: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.inputboxr {
+    position: relative;
+}
+
+.inputboxr ul {
+    list-style: none;
+}
+
+.inputboxr ul li {
+    color: black;
+    margin: 20px;
+    line-height: .5em;
+}
+
+.inputboxr ul li input[type=radio] {
+    position: absolute;
+    opacity: 0;
+}
+
+.inputboxr ul li label {
+    font-size: 16px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.inputboxr ul li:hover label {
+    font-size: 20px;
+}
+
+.inputboxr ul li label::before {
+    content: '';
+    position: absolute;
+    clip-path: circle();
+    margin-top: 5px;
+    left: -2px;
+    height: 20px;
+    width: 20px;
+    background: rgb(206, 206, 156);
+    transform: translate(-50%, -50%);
+}
+
+.inputboxr ul li label::after {
+    content: '';
+    position: absolute;
+    clip-path: circle();
+    margin-top: 5px;
+    left: -2px;
+    height: 7px;
+    width: 7px;
+    background: rgb(0, 255, 115);
+    transform: translate(-50%, -50%);
+}
+
+.inputboxr ul li:hover label::after {
+    background: rgb(0, 174, 255);
+    height: 20px;
+    width: 20px;
+    transition: 1s;
+}
+
+.inputboxr ul li:hover label::before {
+    height: 0px;
+    width: 0px;
+    transition: 1s;
+}
+
+input[type=radio]:checked~label {
+    /* color: #0DFF92; */
+    font-size: 20px;
+    border-bottom: 1px solid;
+}
+
+input[type=radio]:checked~label::after,label::before {
+    background: yellow;
+    height: 20px;
+    width: 20px;
+}
+
+
+section .inputbox span {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    font-weight: 300;
+    transition: 1s;
+    pointer-events: none;
+}
+
+section .inputbox input:focus~span,
+section .inputbox input:valid~span {
+    transform: translate(-10px, -32px);
+}
+
+section .inputbox button:hover {
+    background: rgb(255, 255, 1);
+    cursor: pointer;
+}
+
+.media{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    display: flex;
+}
+
+.media ul{
+    list-style: none;
+    display: flex;
+}
+
+.media li{
+    line-height: 4em;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media li a{
+    color: black;
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.media li a:hover{
+    color: white;
+}
+
+.media li a i{
+    font-size: 30px;
+}

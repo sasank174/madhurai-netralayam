@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0e070a32e4.js"></script>
+    <link rel="stylesheet" href="booking.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="/" class="logo">MN</a>
+
+        <ul class="navigation">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/feedback">FEEDBACK</a></li>
+            <li class="dropdown">
+                <a href="/profile">PROFILE</a>
+                <div class="dropdown-content">
+                    <a href="#"><%= ename %></a>
+                    <a href="/profile">profile</a>
+                    <a href="/history">history</a>
+                    <a href="/logout">sign out</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+
+    <section>
+        <form class="forform" action="/booking" method="POST">
+            <h2>consultation</h2>
+            <div class="inputbox">
+                <p>date:</p>
+                <input type="date" name="date" required>
+            </div>
+            <div class="inputbox">
+                <p>slot:</p>
+                <select name="slot" required>
+                    <option value="9-10" class="op">9-10</option>
+                    <option value="10-11" class="op">10-11</option>
+                    <option value="11-12" class="op">11-12</option>
+                    <option value="4-5" class="op">4-5</option>
+                    <option value="5-6" class="op">5-6</option>
+                    <option value="6-7" class="op">6-7</option>
+                    <option value="7-8" class="op">7-8</option>
+                </select>
+            </div>
+            <div class="inputbox">
+                <button type="submit">book now</button>
+            </div>
+        </form>
+    </section>
+
+    <div class="media">
+        <ul>
+            <li><a href="https://en-gb.facebook.com/login/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://twitter.com/login?lang=en" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(45deg,orange,violet);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo{
+    position: relative;
+    color: white;
+    background: black;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navigation{
+    position: relative;
+    display: flex;
+}
+
+.navigation li{
+    list-style: none;
+}
+
+.navigation li a{
+    display: inline-block;
+    color: black;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navigation li a:hover{
+    color: rgb(250, 9, 9);
+}
+
+.dropdown{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.dropdown .dropdown-content{
+    background: white;
+    position: relative;
+    display: none;
+    /* width: 200px; */
+    text-align: center;
+}
+
+.dropdown .dropdown-content a{
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.dropdown .dropdown-content a:hover{
+    color: #e91e63;
+}
+
+.dropdown:hover{
+    color: #e91e63;
+    background: white;
+}
+
+.dropdown:hover .dropdown-content{
+    display: inline;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px black;
+    padding: 70px 40px;
+}
+
+.container h1{
+    position: relative;
+    color: black;
+    margin-bottom: 45px;
+    line-height: 1em;
+    font-weight: 500;
+    padding-left: 10px;
+    border-left: 5px solid red;
+}
+
+.container h2{
+    position: relative;
+    color: black;
+    margin-bottom: 45px;
+    line-height: 1em;
+    font-weight: 500;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.container .inputbox,button{
+    position: relative;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 35px;
+}
+
+.container .inputbox:last-child{
+    margin-bottom: 0;
+}
+
+.container .inputbox input,button{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border: 1.5px solid black;
+    background: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.container .inputbox a{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 12px;
+    border-radius: 50%;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: rgb(0, 183, 255);
+    border: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.container .inputbox a:first-child{
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.container .inputbox span{
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    font-weight: 300;
+    transition: 1s;
+    pointer-events: none;
+}
+
+.container .inputbox input:focus ~span,
+.container .inputbox input:valid ~span{
+    transform: translate(-10px,-32px);
+}
+
+.container .inputbox button{
+    position: relative;
+    background: rgb(0, 183, 255);
+    color: white;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+.container .inputbox button:hover{
+    background-color: #e91e63;
+}
+
+.container .inputbox a:hover{
+    background-color: #e91e63;
+}
+
+.information{
+    color: red;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 0 0 0;
+}
+
+.media{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    display: flex;
+}
+
+.media ul{
+    list-style: none;
+    display: flex;
+}
+
+.media li{
+    line-height: 4em;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media li a{
+    color: black;
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.media li a:hover{
+    color: white;
+}
+
+.media li a i{
+    font-size: 30px;
+}

@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: url("hospital.jpg") no-repeat;
+    background-size: cover; */
+    background: linear-gradient(45deg, orange, violet);
+    height: 100vh;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo {
+    position: relative;
+    color: white;
+    background: black;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navigation {
+    position: relative;
+    display: flex;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation li a {
+    display: inline-block;
+    color: black;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+    transition: .5s;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.dropdown:hover .pro {
+    font-size: 25px;
+}
+
+.dropdown .dropdown-content {
+    background: white;
+    position: relative;
+    display: none;
+    width: 200px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.dropdown .dropdown-content a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.dropdown .dropdown-content a:hover {
+    color: #e91e63;
+}
+
+.dropdown:hover {
+    color: #e91e63;
+    background: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: inline;
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section .inputbox {
+    margin: 10px;
+    padding: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background: rgb(241, 236, 225);
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover{
+    background: rgb(172, 170, 167);
+}
+
+label{
+    font-size: 30px;
+}
+
+textarea{
+    resize: none;
+}
+
+.media {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    display: flex;
+}
+
+.media ul {
+    list-style: none;
+    display: flex;
+}
+
+.media li {
+    line-height: 4em;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media li a {
+    color: black;
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.media li a:hover {
+    color: white;
+}
+
+.media li a i {
+    font-size: 30px;
+}
