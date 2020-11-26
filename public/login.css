@@ -51,7 +51,9 @@ header {
 }
 
 .navigation li a:hover {
-    color: rgb(250, 9, 9);
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+    transition: .5s;
 }
 
 .dropdown {
@@ -62,11 +64,16 @@ header {
     border-radius: 10px;
 }
 
+.dropdown:hover .pro{
+    font-size: 25px;
+}
+
 .dropdown .dropdown-content {
     background: white;
     position: relative;
     display: none;
-    /* width: 200px; */
+    width: 200px;
+    overflow: hidden;
     text-align: center;
 }
 

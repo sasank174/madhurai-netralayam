@@ -64,7 +64,7 @@ header {
     border-radius: 10px;
 }
 
-.dropdown:hover .pro {
+.dropdown:hover .pro{
     font-size: 25px;
 }
 
@@ -72,7 +72,8 @@ header {
     background: white;
     position: relative;
     display: none;
-    /* width: 200px; */
+    width: 200px;
+    overflow: hidden;
     text-align: center;
 }
 
